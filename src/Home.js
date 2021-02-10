@@ -159,7 +159,7 @@ function Home(){
             </div>
 
             <div className="div4">
-                <img className="left" src={manbike}/>
+                <img className="left photo_3" src={manbike}/>
                 <p className="right center">
                     <p className="title">
                             THE ORIGINAL PELOTON BIKE
@@ -173,33 +173,28 @@ function Home(){
                             <th className="vertical">
                                 Now starting at
                                 <p className="pricing">
-                                    $1,895 WAS$2,245
+                                    $1,895 
                                 </p>
                                 
                             </th>
+                            <th >
                                 Pay monthly
-                                <p style={{color: "white"}}>
+                                <p className="pricing">
                                 $49/MO†
                                 </p>
-                            <th>
-
                             </th>
                         </tr>
                         <tr>
                             Peloton All-Access Membership and accessories separate.
                         </tr>
                     </table>
-                        <p>
+                        <div className="new_button">
                               <button className="red_button" type="button">EXPLORE BIKE</button>
-                        </p>
+                        </div>
                         
                             <p className="small_font_2">
                                 As low as $49/mo for 39 mos with 0% APR. See financing options
                             </p>
-
-                    
-                            
-         
 
                     
                 
