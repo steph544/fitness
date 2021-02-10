@@ -1,10 +1,3 @@
-/* :root {
-  font-size: 62.5%;
-  body {
-    margin: 0;
-    font-size: 1.6rem;
-  }
-} */
 @media screen and (max-width: 200px) {
   .bar {
     display: none;
@@ -48,6 +41,7 @@ h4 {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "overlap";
+  z-index: 1;
 }
 
 .running_video {
@@ -182,6 +176,7 @@ h4 {
 
 .red_button:hover {
   background-color: rgba(214, 22, 48, 0.767);
+  border: none;
 }
 
 .div3 {
@@ -325,4 +320,48 @@ h4 {
 
 .new_button {
   font-size: 3em;
+}
+
+/* <--------DROP-DOWN MENU STYLING--------> */
+
+.drop_down {
+  width: 1000px;
+  height: 570px;
+  background-color: white;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr) repeat(2, 0);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  z-index: 1000;
+}
+
+.bike1 {
+  grid-area: 1 / 1 / 4 / 4;
+}
+.bike2 {
+  grid-area: 1 / 4 / 4 / 6;
+  background-color: rgb(240, 240, 240);
+  color: black;
+  padding-top: 15%;
+  padding-left: 15%;
+  font-weight: 300;
+}
+
+.bike2 p {
+  padding: 5px;
+}
+
+.menu_images {
+  width: 80%;
+  padding: 30%;
+}
+
+.arrow_up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgb(247, 246, 246);
 }

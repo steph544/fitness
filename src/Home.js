@@ -5,13 +5,10 @@ import VideoPortion from "./VideoPortion.js"
 import Items from "./Items.js"
 import SectionOne from "./SectionOne"
 
-function Home(){
+class Home extends React.Component{
 
-    const handleClick=()=>{
-        console.log("bike");
-    }
-
-    return(
+    render(){
+        return(
         <div>
           
             <TopBar/>
@@ -21,5 +18,6 @@ function Home(){
     
         </div>
     )
+    }
 }
 export default Home

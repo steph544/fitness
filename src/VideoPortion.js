@@ -6,11 +6,19 @@ import {ReactComponent as Cart} from "./images/cart.svg";
 import {ReactComponent as Expand} from "./images/expand.svg";
 import {ReactComponent as Arrow} from "./images/arrow.svg";
 import {ReactComponent as SideArrow} from "./images/side_arrow.svg";
+import Menu from "./Menu.js"
+import {ReactComponent as SmallArrow} from "./images/small_arrow.svg"
 
 class VideoPortion extends React.Component{
+
+    state={
+        bike: false
+    }
     
    handleClick=()=>{
-        console.log("bike");
+        this.setState({
+            bike: !this.state.bike
+        })
     }
 
     render(){
@@ -33,7 +41,9 @@ class VideoPortion extends React.Component{
                         <div className="bar">
                             <table className="table">
                                 <tr>
-                                    <th onClick={this.handleClick}>BIKES </th>
+                                    <th onClick={this.handleClick}>
+                                        BIKES 
+                                    </th>
                                     <th>TREADS</th>
                                     <th>APP</th>
                                     <th>CLASSES</th>
@@ -41,6 +51,7 @@ class VideoPortion extends React.Component{
                                     <th>APPAREL</th>
                                 </tr>
                             </table>
+                            <Menu bike={this.state.bike}/>
                         </div>
                         
                         <div className="presentation_nav">
